@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* Corpo e divisão*/
+body {
+	font-family: Arial, sans-serif;
+	background-color: #dddddd;
+	color: rgba(0,0,0,1);
+}
+
+div#interface {
+	width: 900px;
+	background-color: white;
+	margin: -20px auto 0px auto;
+	box-shadow: 0px 0px 10px rgba (0,0,0,0.5);
+	padding: 10px 10px 10px 10px;
+
+}
+
+/* Cabecalho */
+nav#menu {
+	display: block;
+}
+
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: relative;
+	top: -257px;
+	left: 160px;
+}
+
+nav#menu li {
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 1s;
+}
+
+nav#menu li:hover {
+	background-color: #606060;
+}
+
+nav#menu h1 {
+	display: none;
+}
+
+nav#menu a {
+	color: #000000;
+	text-decoration: none;
+}
+
+nav#menu a:hover {
+	color: #ffffff;
+    text-decoration: underline;
+}
+header#cabecalho img#icone {
+	display: block;
+	height: 160px;
+	width: 190px;
+	position: relative;
+	left:740px; 
+	top:5px;
+}
+
+header#cabecalho {
+	border-bottom: 1px #606060 solid;
+	height: 60px;
+}
+
+header#cabecalho h1 {
+	font-family: FonteLogo, sans-serif;
+	font-size: 30px;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba (0,0,0,0.6);
+	padding: 0px;
+	margin-bottom: 0px; 
+}
+
+header#cabecalho h2 {
+	font-family: 'Courier Prime', monospace;
+	font-size: 15px;
+	color: #888888;
+	padding: 0px;
+	margin-top: 0px; 
+}
+
+/* Corpo */
+section#corpo p {
+	text-align: justify;
+	text-indent: 50px;
+}
+section#corpo h2 {
+	font-size: 13pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+
+
+/* rodape */
+footer#rodape {
+	clear: both;
+	border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+	text-align: center;
+	font-size: 11px;
+}
