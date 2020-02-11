@@ -3,6 +3,7 @@
 <head>
     <meta charset="UFT-8"/>
     <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/formulario.css"/>
     <script src="../js/scripts.js"></script>
     <title>Agende aqui</title>
 </head>
@@ -26,13 +27,97 @@
         </nav>
     </header>
     <section id="corpo">
+        <form method="POST" id=fContato action="maito:exemplo.contato@email.com">
+            <fieldset id="usuario">
+              <legend>Identificação do Usuário</legend>
+              <p><label for="cName">Nome: </label><input type="text" name="tName" id="cName" size="40" placeholder="Digite seu nome completo"/></p>
+              <p><label for="cSenha">CPF: </label><input type="text" name="tcpf" id="ccpf" size="17" maxlength="12" placeholder="Apenas os números"/> </p>
+              <p><label for="cEmail">E-mail: </label><input type="email" name="tEmail" id="cEmail" size="20" placeholder="exemplo@email.com"/> </p>
+              <p><label for="cTelefone">Telefone: </label><input type="text" name="tPhone" id="cPhone" size="20" placeholder="xx xxxxx xxxx"/> </p>
+              <fieldset id=sexo>
+                 <legend>Sexo:</legend>
+                 <input type="radio" name="tSex" id="cMasc"/> <label for="cMasc">Masculino</label></br>
+                 <input type="radio" name="tSex" id="cFem"/> <label for="cFem">Feminino</label>
+              </fieldset>
+                <p><label for="cData">Data de Nascimento: </label><input type="date" name="tData" id="cData"/></p>
+            </fieldset>
+            
+            <fieldset id="endereco">
+              <legend>Endereço do Usuário</legend>
+              <p><label for="cRua">Logradouro: </label><input type="text" name="tRua" id="cRua" size="50" placeholder="Avenida, Rua..."/></p>
+              <p><label for="cNumero">Número: </label><input type="number" name="tNumero" id="cNumero" min="0" max="99999" placeholder="Nº"/></p>
+              <p><label for="cEst">Estado: </label>
+                  <select name="tEst" id="cEst">
+                    <optgroup label="Distrito Federal">
+                        <option>Distrito Federal</option>
+                    </optgroup>
+                      <optgroup label="Sudeste">
+                          <option>Rio de Janeiro</option>
+                          <option>São Paulo</option>
+                          <option>Minas Gerais</option>
+                          <option>Espirito Santo</option>
+                      </optgroup>
+                      <optgroup label="Centro-Oeste">
+                        <option>Mato Grosso</option>
+                        <option>Mato Grosso do Sul</option>
+                        <option>Goiás</option>
+                      </optgroup>
+                      <optgroup label="Nordeste">
+                        <option>Maranhão</option>
+                        <option>Piauí</option>
+                        <option>Bahia</option>
+                        <option>Ceará</option>
+                        <option>Rio Grande do Norte</option>
+                        <option>Paraíba</option>
+                        <option>Pernambuco</option>
+                        <option>Alagoas</option>
+                        <option>Sergipe</option>
+                      </optgroup>
+                      <optgroup label="Norte">
+                        <option>Tocantins</option>
+                        <option>Pará</option>
+                        <option>Amapá</option>
+                        <option>Roraima</option>
+                        <option>Amazonas</option>
+                        <option>Acre</option>
+                        <option>Rondônia</option>
+                      </optgroup>
+                      <optgroup label="Sul">
+                        <option>Paraná</option>
+                        <option>Santa Catarina</option>
+                        <option>Rio Grande do Sul</option>
+                      </optgroup>
+                    </select></p>
+              <p><label for="cCid">Cidade: </label><input type="text" name="tCid" id="cCid" size="25"/></p>
+            </fieldset>
 
+            <fieldset id="mensagem">
+                <legend>Mensagem do Usuário</legend>
+             <p><label for="cName">Serviço necessário: </label><input type="text" name="tName" id="cName" size="40" placeholder="Serviço ou problema"/></p>
+             <p>Grau de Urgência: mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>max</p>
+             <p><label for="cData">Preferência de data e horário: </label><input type="datetime-local" name="tData" id="cData"/></p>
+             <p><label for="cMens">Mensagem:</label>
+                 <textarea name="tMens" id="cMens" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+             </p>
+           </fieldset>
 
-    
+           <fieldset id="pedido">
+            <legend>Forma de pagamento</legend>
+            <fieldset id=sexo>
+                <legend>Cartão:</legend>
+                <input type="radio" name="tSex" id="cFem"/> <label for="cFem">Debito</label></br>
+                <input type="radio" name="tSex" id="cFem"/> <label for="cFem">Credito</label>
+             </fieldset>
+             <p><label for="cName">Nome do titular: </label><input type="text" name="tcpf" id="ccpf" size="17" maxlength="12" placeholder="Apenas os números"/> </p>
+             <p><label for="cNumber">Número do cartão: </label><input type="text" name="tcpf" id="ccpf" size="17" maxlength="12" placeholder="Apenas os números"/> </p>
+             <p><label for="cCvv">CVV: </label><input type="num" name="tcvv" id="ccvv" size="17" maxlength="3" placeholder="Apenas os números"/> </p>
+           </fieldset>
+           <input type="submit" name="enviar" value="Enviar">  
+        </form>
     </section>
     <footer id="rodape">
         <p>Blabla é um projeto criado para recebimento de nota avaliativa da disciplina de Fundamentos de Sistemas de Informação.</p>
-        <p>Feito por: Isaias Rosa, Mathias Leandro e Leticia Naziazeno.</p>
+        <p>Feito por: Isaias Rosa e Leticia Naziazeno.</p>
         <p><a href="https://github.com/MrFYou/Trabalho-de-fundamentos-de-S.I." target="_blank">Codigo fonte disponivel no GittHub</a></p>
     </footer>
 </div>
