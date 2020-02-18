@@ -25,7 +25,7 @@ nav#menu ul{
 	text-transform: uppercase;
 	position: relative;
 	top: -257px;
-	left: 160px;
+	left: 500px;
 }
 
 nav#menu li {
@@ -55,10 +55,10 @@ nav#menu a:hover {
 }
 header#cabecalho img#icone {
 	display: block;
-	height: 160px;
+	height: 190px;
 	width: 190px;
 	position: relative;
-	left:740px; 
+	left:800px; 
 	top:5px;
 }
 
