@@ -2,7 +2,8 @@
 /* Corpo e divisão*/
 body {
 	font-family: Arial, sans-serif;
-	background-color: #dddddd;
+	background-image: url(../media/fundo2.jpg);
+	/*background-image: url(../media/fundo1.jpg);*/
 	color: rgba(0,0,0,1);
 }
 
@@ -12,6 +13,7 @@ div#interface {
 	margin: -20px auto 0px auto;
 	box-shadow: 0px 0px 10px rgba (0,0,0,0.5);
 	padding: 10px 10px 10px 10px;
+	opacity: 0.92;
 
 }
 
@@ -24,8 +26,10 @@ nav#menu ul{
 	list-style: none;
 	text-transform: uppercase;
 	position: relative;
-	top: -257px;
-	left: 500px;
+	top: -165px;
+	/*left: 500px;*/
+	left: 410px;
+	opacity: 1;
 }
 
 nav#menu li {
@@ -51,15 +55,26 @@ nav#menu a {
 
 nav#menu a:hover {
 	color: #ffffff;
-    text-decoration: underline;
+	text-decoration: underline;
 }
+header#cabecalho img#logo {
+	display: block;
+	position: relative;
+	height: 70px;
+	width: auto;
+	top:-250px;
+	left: 270px;
+}
+
+
 header#cabecalho img#icone {
 	display: block;
-	height: 190px;
-	width: 190px;
+	height: 100px;
+	width: 100px;
 	position: relative;
-	left:800px; 
-	top:5px;
+	/*left:430px;*/
+	left:820px; 
+	top:-87px;
 }
 
 header#cabecalho {
