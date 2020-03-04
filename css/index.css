@@ -28,14 +28,15 @@ nav#menu ul{
 	position: relative;
 	top: -165px;
 	/*left: 500px;*/
-	left: 410px;
+	left: 365px;
 	opacity: 1;
 }
 
 nav#menu li {
 	display: inline-block;
 	background-color: #dddddd;
-	padding: 10px;
+	/*padding: 10px;*/
+	padding: 5px;
 	margin: 2px;
 	transition: background-color 1s;
 }
@@ -62,8 +63,8 @@ header#cabecalho img#logo {
 	position: relative;
 	height: 70px;
 	width: auto;
-	top:-250px;
-	left: 270px;
+	top:-239px;
+	left: 230px;
 }
 
 
