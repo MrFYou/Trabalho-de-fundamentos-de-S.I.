@@ -27,7 +27,7 @@
         <img id="logo" src="../media/service.png">
     </header>
     <section id="corpo">
-        <form method="POST" id=fContato action="maito:exemplo.contato@email.com">
+       <form class="formulario" id=fContato method="POST" action="../php/formulario.php"> 
             <fieldset id="usuario">
               <legend>Identificação do Usuário</legend>
               <p><label for="cName">Nome: </label><input type="text" name="tName" id="cName" size="40" placeholder="Digite seu nome completo"/></p>
@@ -93,7 +93,7 @@
 
             <fieldset id="mensagem">
                 <legend>Mensagem do Usuário</legend>
-             <p><label for="cName">Serviço necessário: </label><input type="text" name="tName" id="cName" size="40" placeholder="Serviço ou problema"/></p>
+             <p><label for="cService">Serviço necessário: </label><input type="text" name="tService" id="cService" size="40" placeholder="Serviço ou problema"/></p>
              <p>Grau de Urgência: mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>max</p>
              <p><label for="cData">Preferência de data e horário: </label><input type="datetime-local" name="tData" id="cData"/></p>
              <p><label for="cMens">Mensagem:</label>
@@ -103,14 +103,14 @@
 
            <fieldset id="pedido">
             <legend>Forma de pagamento</legend>
-            <fieldset id=sexo>
+            <fieldset id=pag>
                 <legend>Cartão:</legend>
-                <input type="radio" name="tSex" id="cFem"/> <label for="cFem">Debito</label></br>
-                <input type="radio" name="tSex" id="cFem"/> <label for="cFem">Credito</label>
+                <input type="radio" name="tPag" id="cPag"/> <label for="cPag">Debito</label></br>
+                <input type="radio" name="tPag" id="cPag"/> <label for="cPag">Credito</label>
              </fieldset>
-             <p><label for="cName">Nome do titular: </label><input type="text" name="tcpf" id="ccpf" size="17" maxlength="12" placeholder="Apenas os números"/> </p>
-             <p><label for="cNumber">Número do cartão: </label><input type="text" name="tcpf" id="ccpf" size="17" maxlength="12" placeholder="Apenas os números"/> </p>
-             <p><label for="cCvv">CVV: </label><input type="num" name="tcvv" id="ccvv" size="17" maxlength="3" placeholder="Apenas os números"/> </p>
+             <p><label for="cTitular">Nome do titular: </label><input type="text" name="tTitular" id="cTitular" size="25" maxlength="99" placeholder="Nome do titular do cartão"/> </p>
+             <p><label for="cCartao">Número do cartão: </label><input type="num" name="tCartao" id="cCartao" size="20" maxlength="30" placeholder="Apenas os números"/> </p>
+             <p><label for="cCvv">CVV: </label><input type="num" name="tcvv" id="ccvv" size="4" maxlength="3" placeholder="CVV"/> </p>
            </fieldset>
            <input type="submit" name="enviar" value="Enviar">  
         </form>
